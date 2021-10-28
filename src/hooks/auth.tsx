@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as AuthSessions from 'expo-auth-session';
 
-const CLIENT_ID = '41eb753d9421f9e7a894';
+const CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const SCOPE = 'read:user';
 const USER_STORAGE = '@nlwheat:user';
 const TOKEN_STORAGE = '@nlwheat:token';
